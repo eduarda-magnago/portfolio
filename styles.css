@@ -1,0 +1,522 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #efefef;
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+
+@font-face {
+    font-family: 'Wide';
+    src: url('wide-font.woff2') format('woff2'),
+         url('wide-font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+.container {
+    width: 800px;
+    background-color: #efefef;
+}
+
+h1 {
+    font-size: 55px;
+    color: #000;
+    text-align: start;
+    margin-bottom: 20px;
+    font-family: 'Wide', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-family: 'Wide', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-style: normal;
+    color: #000;
+}
+
+/*Início*/
+
+.bloco1 {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.inicio {
+    margin-bottom: 40px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: bold;
+    color: #000;
+}
+
+.texto-inicio {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: start;
+}
+
+.inicio-images {
+    display: flex;
+    gap: 10px;
+}
+
+.inicio-images img {
+    width: 250px;
+}
+
+
+/* About Section */
+.about {
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.about-grupo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.about img {
+    width: 40%;
+}
+
+.about-texto {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-about {
+    color: #000;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.texto-about {
+    color: #000;
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif; 
+}
+
+/* Alinhar as colunas de Visão e Competências */
+.text-columns {
+    display: flex; /* Deixa os elementos lado a lado */
+    justify-content: space-between; /* Espaça igualmente entre as colunas */
+    gap: 20px; /* Espaço entre Visão e Competências */
+    flex-wrap: wrap; /* Garante que seja responsivo */
+}
+
+.visao,
+.competencias {
+    flex: 1; /* Cada bloco ocupa o mesmo espaço */
+    min-width: 200px; /* Largura mínima para evitar que fique pequeno demais */
+}
+
+.visao h2,
+.competencias h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left; /* Alinha os títulos à esquerda */
+}
+
+.text-columns ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+
+/* Highlight Section */
+.highlight {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.highlight img {
+    width: 100%;
+    opacity: 0.7; /* Transparência para destacar o texto */
+}
+
+.highlight-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20.0px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; 
+    font-style: normal;
+}*/
+
+/*Portfolio*/
+.projects {
+    margin-bottom: 40px;
+}
+
+.projects-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.projects-gallery div {
+    width: 30%;
+    text-align: center;
+}
+
+.projects-gallery img {
+    width: 100%;
+}
+
+.projects-gallery p {
+    margin-top: 10px;
+}
+
+.titulo-projetos{
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.img-projetos{
+    height: 165px;
+    width: 100px;
+}
+
+.projects .button{
+    text-decoration: none;
+    background-color: #e0e0e0;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 10px;
+    border-radius: 2px;
+    transition: background-color 0.3s;
+    font-family: 'Poppins', sans-serif; 
+    cursor: pointer;
+}
+
+.projects .button:hover{
+    background-color: #efefef;
+    transition: background-color 0.3s;
+    font-family: 'Poppins', sans-serif; 
+}
+
+/* Consulting Section */
+.consulting {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.consulting-content {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.titulo-consultoria {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: start;
+    display: flex;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.texto-consultoria {
+    text-align: start;
+}
+
+.foto-consultoria {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 20px; /* Adiciona um espaçamento acima da imagem */
+}
+
+
+/* Contact Section */
+.contato {
+    padding: 20px;
+    text-align: center;
+}
+
+.texto-contato{
+    font-size: 12px;
+    display: flex;
+    align-items: flex-start;
+    color: #000;
+    text-decoration: none;
+}
+
+.titulo-contato{
+    display: flex;
+    font-weight: 1000;
+    align-items: flex-start;
+    font-size: 45px;
+    color: #000;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.detalhe{
+    display: flex;
+    margin-left: 660px;
+    margin-bottom: 0px;
+    font-size: 10px;
+    color: #000;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.imagem-contato{
+    height: 215px;
+    width: 780px;
+    align-items: start;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Footer*/
+.texto-footer{
+    font-size: 10px;
+}
+
+/* Media query para telas de largura máxima de 480px */
+@media screen and (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .container {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    /* Sessão "Início" */
+    .inicio h1 {
+        font-size: 33px;
+        font-weight: 800;
+        text-align: start;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+    }
+
+    .inicio .texto-inicio {
+        font-size: 18px;
+        text-align: start;
+        margin-bottom: 15px;
+        margin-left: 5px;
+    }
+
+    .inicio-images img {
+        width: 200px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .bloco1{
+        flex-direction: column;
+
+    }
+
+    /* Sessão "Quem Sou Eu?" */
+    .about-grupo {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    .about-grupo img {
+        width: 385px;
+    }
+
+    .about-texto {
+        width: 100%;
+        text-align: start;
+    }
+
+    .titulo-about {
+        text-align: start;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .texto-about {
+        font-size: 15px;
+        line-height: 1.8;
+        text-align: start;
+        flex-wrap: wrap;
+    }
+
+    /* Sessão "Visão e Competências" */
+    .services .text-columns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .visao, .competencias {
+        width: 100%;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .service-foto{
+        width: 400px;
+        text-align: start;
+        margin-left: 0;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    ul li {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    /* Sessão "Projetos Autorais" */
+    .projects {
+        text-align: start;
+        width: 100%;
+    }
+
+    .projects-gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .projects-gallery > div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .projects-gallery img {
+        width: 400px;
+        align-items: start;
+    }
+
+    .projects .button{
+        padding: 5px 10px;
+        width: 90%;
+        border-radius: 2px;
+    }
+
+    .projects-gallery p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .projects-gallery .button {
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    /* Sessão "Contato" */
+    .contato {
+        width: 100%;
+    }
+
+    .titulo-contato {
+        font-size: 27px;
+        margin-bottom: 10px;
+    }
+
+    .texto-contato {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 5px;
+    }
+
+    .detalhe{
+        display: flex;
+        margin-left: 660px;
+        margin-bottom: 0px;
+        font-size: 10px;
+        color: #000;
+        font-family: 'Poppins', sans-serif; 
+    }
+    
+    .imagem-contato{
+        height: 150px;
+        width: 390px;
+        align-items: start;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        text-align: start;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+}
+
