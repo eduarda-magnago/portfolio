@@ -156,7 +156,10 @@ h1 {
     line-height: 1.5;
 }
 
-
+.service-foto{
+    width: 802px;
+    height: 150px;
+}
 
 /* Highlight Section */
 .highlight {
