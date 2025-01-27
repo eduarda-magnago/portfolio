@@ -332,7 +332,6 @@ h1 {
     font-size: 10px;
 }
 
-
 /* Media query para telas de largura máxima de 480px */
 @media screen and (max-width: 480px) {
     body {
@@ -412,23 +411,33 @@ h1 {
     }
 
     /* Sessão "Visão e Competências" */
+
+    .services .proposta {
+        width: 100%; 
+        padding: 0; 
+        margin: 0;
+        display: flex; 
+        justify-content: center; 
+    }
+
+    .service-foto {
+        width: 100vw; 
+        height: auto; 
+        margin: 0; 
+        padding: 0; 
+        display: block; 
+    }
+
     .services .text-columns {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+        padding: 10px; 
+        margin: 0 auto; 
+        width: 100%; 
     }
 
     .visao, .competencias {
-        width: 100%;
-        text-align: justify;
-        margin-bottom: 20px;
-    }
-
-    .service-foto{
-        width: 400px;
-        text-align: start;
-        margin-left: 0;
+        width: 100%; 
+        text-align: justify; 
+        margin-bottom: 10px; 
     }
 
     h2 {
@@ -559,4 +568,5 @@ h1 {
         width: 100%; 
     }
 }
+
 
