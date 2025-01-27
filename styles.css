@@ -332,6 +332,7 @@ h1 {
     font-size: 10px;
 }
 
+
 /* Media query para telas de largura máxima de 480px */
 @media screen and (max-width: 480px) {
     body {
@@ -349,7 +350,7 @@ h1 {
     /* Sessão "Início" */
     .inicio h1 {
         font-size: 33px;
-        font-weight: 800;
+        font-weight: 1000;
         text-align: start;
         margin-bottom: 10px;
         display: flex;
@@ -364,15 +365,20 @@ h1 {
         margin-left: 5px;
     }
 
-    .inicio-images img {
-        width: 200px;
-        height: auto;
-        margin-bottom: 10px;
-    }
-
     .bloco1{
         flex-direction: column;
+    }
 
+    .inicio-images {
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 10px; 
+        justify-content: space-between; 
+    }
+
+    .inicio-images img {
+        width: calc(50% - 5px); 
+        height: auto; 
     }
 
     /* Sessão "Quem Sou Eu?" */
@@ -486,27 +492,32 @@ h1 {
 
     /* Sessão "Contato" */
     .contato {
-        width: 100%;
+        width: 100%; 
+        padding: 0; 
+        margin: 0; 
+    }
+
+    .imagem-contato {
+        width: 100%; 
+        height: auto; 
+        margin: 0; 
     }
 
     .titulo-contato {
-        font-size: 27px;
-        margin-bottom: 10px;
+        font-size: 24px; 
+        margin: 10px 0; 
+        text-align: center; 
     }
 
     .texto-contato {
         font-size: 14px;
         line-height: 1.8;
         margin-bottom: 5px;
+        text-align: center; 
     }
 
-    .detalhe{
-        display: flex;
-        margin-left: 660px;
-        margin-bottom: 0px;
-        font-size: 10px;
-        color: #000;
-        font-family: 'Poppins', sans-serif; 
+    .detalhe {
+        display: none; 
     }
     
     .imagem-contato{
@@ -523,18 +534,29 @@ h1 {
     }
 
     html, body {
-            overflow-x: hidden; 
-            width: 100%;       
-        }
-    
-        * {
-            box-sizing: border-box; 
-            max-width: 100%;        
-        }
-    
-        img {
-            max-width: 100%;        
-            height: auto;         
-        }
+        overflow-x: hidden; 
+        overflow-y: auto; 
+        width: 100%; 
+        min-height: 100%; 
+        scroll-behavior: smooth; 
+        -webkit-overflow-scrolling: touch; 
+    }
+
+    * {
+        box-sizing: border-box; 
+        max-width: 100%; 
+    }
+
+    img {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column; 
+        align-items: stretch; 
+        width: 100%; 
+    }
 }
 
