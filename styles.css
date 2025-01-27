@@ -242,6 +242,11 @@ h1 {
     font-family: 'Poppins', sans-serif; 
 }
 
+.texto-projeto{
+    text-decoration: none;
+    color:#000;
+}
+
 /* Consulting Section */
 .consulting {
     margin-bottom: 25px;
